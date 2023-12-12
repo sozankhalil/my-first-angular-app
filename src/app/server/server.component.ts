@@ -2,19 +2,22 @@ import { Component } from "@angular/core";
 
 @Component({
     selector:'app-server',
-    template:`
-        <h1>This is my app server component</h1>
-        `,
-        styles:[`
-        h1{
-            color:white;
-            background:black;
-            display:inline;
-            padding:1rem;
-            margin:1rem;
-        }`
-        ]
+    templateUrl:'./server.component.html',
+
 })
 export class ServerComponent{
+serverId:number = 10;
+serverStatus:string = 'offline';
+userName = '';
+getServerStatus(){
+    return this.serverStatus
+}
+clearTheString(){
+    this.userName = ''
+}
 
 }
+
+
+
+
