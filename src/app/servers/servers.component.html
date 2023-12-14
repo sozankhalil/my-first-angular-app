@@ -1,14 +1,19 @@
 
 <label for="input" class="block">server name</label>
-<input type="text" name="" id="" (input)="onUpdateServerName($event)" class="w-10/12 h-10 m-1 bg-slate-200">
+<input type="text" name="" id="" (input)="onUpdateServerName($event)" class="w-10/12 h-10 bg-slate-200">
 <p>{{serverName}}</p>
+<br>
+<label for="">server name</label>
 <br>
 <input type="text" name="" id="" class="w-10/12 h-10 m-1 bg-slate-200" [(ngModel)]="serverName">
 <br>
-
-<br>
-
 <button class="p-3 m-4 text-white rounded-sm bg-slate-500" [disabled]="!allowNewServer" (click)="onCreationServer()">Add server</button>
 <!-- <p [innerText]="allowNewServer"></p> -->
-<p>{{serverCreationStatus}}</p>
+<!-- <p>{{serverCreationStatus}}</p> -->
+
+<p *ngIf="serverCreation; else noServer " class="text-red-600">server was created, server name is {{serverName}}</p>
+<ng-template #noServer>
+    <p>No, server was created</p>
+</ng-template>
 <br>
+
