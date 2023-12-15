@@ -1,0 +1,12 @@
+
+<nav class="flex justify-between py-3 mx-4 my" [class.black-mode]="isDarkMode">
+    <img src="/assets/logo.png" alt="" srcset="" class="h-10 px-2 w-30">
+    <ul class="flex gap-10 text-lg font-semibold text-center align-middle">
+        <li class="hover:underline hover:text-red-600 ">Home</li>
+        <li class="hover:underline hover:text-red-600 ">about</li>
+        <li class="hover:underline hover:text-red-600">Contact</li>
+        <li class=" hover:underline hover:text-red-600">service</li>
+        <li class="p-1 px-2 text-white bg-red-500 "><button (click)="toggleLogin()">{{isLoggedIn ?'Log out':'Log In'}}</button></li>
+        <li class="p-1 px-2 mx-2 text-white bg-black" [class.white-mode]="isDarkMode"><button (click)="toggleMode()" >{{isDarkMode?'light mode':'dark mode'}}</button></li>
+    </ul> 
+</nav> 

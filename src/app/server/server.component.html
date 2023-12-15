@@ -1,3 +1,4 @@
+<div  [ngStyle]="{backgroundColor: serverStatus==='online'?'green':'red'}" class="mt-4"  >{{'server'}} with ID {{serverId}} is {{getServerStatus()}}</div>
 <div  [ngStyle]="{backgroundColor: getColor()}" class="mt-4"  >{{'server'}} with ID {{serverId}} is {{getServerStatus()}}</div>
 
 <hr class="h-5 font-bold">

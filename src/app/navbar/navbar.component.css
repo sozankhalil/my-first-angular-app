@@ -1,0 +1,8 @@
+.black-mode{
+    color:white;
+    background-color: rgb(34, 33, 33);
+}
+.white-mode{
+    color: black;
+    background-color: white;
+}
