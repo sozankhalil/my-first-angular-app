@@ -7,13 +7,15 @@ import { ServersComponent } from './servers/servers.component';
 import { ServerComponent } from './server/server.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { Assignment1Component } from './assignment1/assignment1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServersComponent,
     ServerComponent,
-    NavbarComponent
+    NavbarComponent,
+    Assignment1Component
   ],
   imports: [
     BrowserModule,

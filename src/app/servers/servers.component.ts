@@ -12,12 +12,14 @@ allowNewServer=false;
 serverCreationStatus = 'No server was created';
 serverName = 'Test server';
 serverCreation=false;
+servers=['serverTest' , 'serverTest 2']
 constructor(){
   setTimeout(()=>{this.allowNewServer=true},4000)
 }
 onCreationServer(){
   this.serverCreation=true;
   this.serverCreationStatus='the server is created the name is ' + this.serverName;
+  this.servers.push(this.serverName)
 }
 onUpdateServerName(event:Event){
 this.serverName = (<HTMLInputElement>event.target).value;

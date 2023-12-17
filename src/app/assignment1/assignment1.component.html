@@ -1,0 +1,7 @@
+<p class="underline">assignment1 component playground!</p>
+<br>
+<button class="p-1 px-2 text-white bg-green-500 " (click)="displayPassword()">display details</button>
+
+<p *ngIf="display"> secret password is 12345</p>
+<!-- <p *ngFor=" let item of count" [ngClass]="{special: item > 5}" [ngStyle]="{ marginTop: item > 5 ? '1rem': ''}">{{item}}</p> -->
+<p *ngFor=" let item of count; let i =index" [ngClass]="{special: i > 3}" [ngStyle]="{ marginTop: item > 3 ? '1rem': ''}">{{item}}</p>

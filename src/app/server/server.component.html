@@ -1,7 +1,7 @@
-<div  [ngStyle]="{backgroundColor: serverStatus==='online'?'green':'red'}" class="mt-4"  >{{'server'}} with ID {{serverId}} is {{getServerStatus()}}</div>
-<div  [ngStyle]="{backgroundColor: getColor()}" class="mt-4"  >{{'server'}} with ID {{serverId}} is {{getServerStatus()}}</div>
+<div  [ngStyle]="{backgroundColor: serverStatus==='online'?'green':'red'}" class="mt-4" [ngClass]="{online:serverStatus==='online'} " >{{'server'}} with ID {{serverId}} is {{getServerStatus()}}</div>
+<div  [ngStyle]="{backgroundColor: getColor()}" class="mt-4" [ngClass]="{online:serverStatus==='online'}" >{{'server'}} with ID {{serverId}} is {{getServerStatus()}}</div>
 
-<hr class="h-5 font-bold">
+<!-- <hr class="h-5 font-bold">
 <h1 class="mx-5 font-semibold text-blue-500">assignment about data binding
     1- add input field two way data binding 
     2- add a button which may only be clicked if the user name is not an empty string and upon clicking the button the username should be reset to an empty string
@@ -14,4 +14,4 @@
 <button [disabled]="!userName" (click)="clearTheString()" class="p-3 m-4 text-white rounded-sm bg-slate-500">reset user name</button>
 <p>{{userName}}</p>
     
-</div>
+</div> -->
