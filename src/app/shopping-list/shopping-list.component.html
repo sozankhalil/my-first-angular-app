@@ -1,6 +1,11 @@
 
-<div>
+<div class="mt-6 ml-6">
 <app-shopping-edit></app-shopping-edit>
 <hr class="my-4">
-<p>The list</p>
+<ul class="">
+   <li><a class="block w-10/12 p-2 border-2 cursor-pointer" *ngFor="let ingredient of ingredients">
+    {{ingredient.name}} ({{ingredient.amount}})
+    </a>
+</li> 
+</ul>
 </div>
